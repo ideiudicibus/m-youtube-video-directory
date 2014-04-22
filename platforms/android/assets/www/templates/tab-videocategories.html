@@ -1,0 +1,13 @@
+<ion-view title="Categories">
+  <ion-content class="has-header">
+        <div class="list">
+        <a ng-repeat="item in videoCategories" 
+           href="#tab/videosByCategory/{{item.id}}"
+           class="item item-thumbnail-left">
+          <img ng-src="img/{{ item.image }}">
+          <h2>{{ item.title }}</h2>
+          <h4>{{ item.description }}</h4>
+        </a>
+      </div>
+  </ion-content>
+</ion-view>

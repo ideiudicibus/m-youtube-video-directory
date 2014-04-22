@@ -1,0 +1,26 @@
+<view title="video.title + ' ' + video.category">
+   <ion-content class="has-header">
+      <div class="details">
+          <img src="img/{{ video.thumbImgageUrl }}" width="100" height="100"/>
+          <h4>{{ video.title }} {{ video.author }}</h4>
+          <p>{{ video.category }}</p>
+          <br/>
+      </div>
+      <div class="list card">
+        <div class="item item-text-wrap">
+      <object width="320" height="194">
+        <param name="movie" ng-value="{{trustSrc(video.videoUrl)}}" ></param>
+        <param name="allowFullScreen" value="true"></param>
+        <param name="allowscriptaccess" value="always"></param>
+        <object width="320" height="194">
+        <embed ng-src="{{trustSrc(video.videoUrl)}}" type="application/x-shockwave-flash" width="320" height="194" allowscriptaccess="always" allowfullscreen="true"></embed>
+      </object>
+    </div>
+      </div>
+    <div class="item">
+      {{video.fullDescription}}
+    </div>
+  </ion-content>
+</view>
+
+
