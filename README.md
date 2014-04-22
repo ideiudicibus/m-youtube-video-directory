@@ -16,7 +16,7 @@ build for android
 run a simulation for android
 =
 (I personally use Genymotion which is free for personal use)
->$>cordova run android
+>cordova run android
 
 
 
