@@ -3,7 +3,7 @@ mobile youtube video directory
 
 youtube video directory made with ionicframework (http://ionicframework.com/) and cordova 
 
->git https://github.com/ideiudicibus/m-youtube-video-directory
+>git clone https://github.com/ideiudicibus/m-youtube-video-directory
 
 >pyhton -mSimpleHTTPServer
 
