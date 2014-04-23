@@ -33,8 +33,8 @@ angular.module('youtubeVideoDirectory', ['ionic', 'youtubeVideoDirectory.control
 
     // Each tab has its own nav history stack:
 
-    .state('tab.index', {
-      url: '/index',
+    .state('tab.home', {
+      url: '/home',
       views: {
         'tab-index': {
           templateUrl: 'templates/tab-index.html',
@@ -43,8 +43,8 @@ angular.module('youtubeVideoDirectory', ['ionic', 'youtubeVideoDirectory.control
       }
     })
 
-    .state('tab.videoCategories', {
-      url: '/videoCategories',
+    .state('tab.categorie', {
+      url: '/categorie',
       views: {
         'tab-videocategories': {
           templateUrl: 'templates/tab-videocategories.html',
@@ -52,6 +52,16 @@ angular.module('youtubeVideoDirectory', ['ionic', 'youtubeVideoDirectory.control
         }
       }
     })
+
+    .state('tab.info', {
+      url: '/info',
+      views: {
+        'tab-info': {
+          templateUrl: 'templates/tab-info.html',
+        }
+      }
+    })
+
      .state('tab.videosByCategory', {
       url: '/videosByCategory/:categoryId',
       views: {
@@ -72,7 +82,7 @@ angular.module('youtubeVideoDirectory', ['ionic', 'youtubeVideoDirectory.control
     })
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/index');
+  $urlRouterProvider.otherwise('/tab/home');
 
 });
 

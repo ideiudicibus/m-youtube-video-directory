@@ -1,13 +1,16 @@
-<ion-view title="Videos">
-  <ion-content class="has-header">
-        <div class="list">
-        <a ng-repeat="item in videos" 
-           href="#tab/video/{{item.id}}"
-           class="item item-thumbnail-left">
-          <img ng-src="img/{{ item.thumbImgageUrl }}">
-          <h2>{{ item.title }}</h2>
-          <h4>{{ item.author }}</h4>
-        </a>
-      </div>
-  </ion-content>
+<ion-view title="Video">
+<div class="bar bar-subheader">
+  <h2 class="title"> Nomecategoria </h2>
+</div>
+<ion-content class="has-subheader">
+<div class="list">
+  <a ng-repeat="item in videos" 
+  href="#tab/video/{{item.id}}"
+  class="item item-thumbnail-left">
+  <img ng-src="img/{{ item.thumbImgageUrl }}">
+  <h2>{{ item.title }}</h2>
+  <h4>{{ item.author }}</h4>
+</a>
+</div>
+</ion-content>
 </ion-view>
